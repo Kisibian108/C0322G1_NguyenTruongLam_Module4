@@ -19,7 +19,7 @@ public class DictionaryRepositoryImpl implements IDictionaryRepository {
     }
 
     @Override
-    public String tuDien(String name) {
+    public String dictionary(String name) {
         return dictionaryMap.get(name);
     }
 }

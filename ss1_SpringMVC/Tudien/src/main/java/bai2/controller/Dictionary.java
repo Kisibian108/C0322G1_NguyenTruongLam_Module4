@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class Dictionary {
 
     @Autowired
-    private IDictionaryService tuDienService;
+    private IDictionaryService dictionaryService;
 
     @GetMapping("")
     public String showFormList() {
@@ -21,7 +21,7 @@ public class Dictionary {
 
     @PostMapping("")
     public String save(@RequestParam(value = "name", defaultValue = "") String name, Model model) {
-        String txtSearch = tuDienService.tuDien(name);
+        String txtSearch = dictionaryService.dictionary(name);
         model.addAttribute("txtSearch", txtSearch);
         return "list";
     }

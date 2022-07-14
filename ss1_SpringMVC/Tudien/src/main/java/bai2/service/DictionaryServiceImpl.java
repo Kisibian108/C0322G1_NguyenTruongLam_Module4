@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 public class DictionaryServiceImpl implements IDictionaryService {
 
     @Autowired
-    IDictionaryRepository tuDienRepository;
+    IDictionaryRepository dictionaryRepository;
     @Override
-    public String tuDien(String name) {
-       String result =  tuDienRepository.tuDien(name);
+    public String dictionary(String name) {
+       String result =  dictionaryRepository.dictionary(name);
         if (result != null) {
             return result;
         } else {
