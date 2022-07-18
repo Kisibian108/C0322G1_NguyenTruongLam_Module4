@@ -1,4 +1,4 @@
-package bai2.repository;
+package dictionary.repository;
 
 
 import org.springframework.stereotype.Repository;

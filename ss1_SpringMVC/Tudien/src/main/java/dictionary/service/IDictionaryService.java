@@ -1,4 +1,4 @@
-package bai2.service;
+package dictionary.service;
 
 public interface IDictionaryService {
 

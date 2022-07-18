@@ -1,6 +1,6 @@
-package bai2.service;
+package dictionary.service;
 
-import bai2.repository.IDictionaryRepository;
+import dictionary.repository.IDictionaryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
